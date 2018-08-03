@@ -1,0 +1,22 @@
+galaxy_info:
+  author: w.luis.araujo
+  description: SNMP Agent
+  company: Personal
+  license: license (GPLv3)
+
+  min_ansible_version: 2
+
+  platforms:
+   - name: RedHat
+     versions:
+     - all
+
+  galaxy_tags: 
+     - snmp
+     - snmp-agent
+     - snmp-client
+ 
+  dependencies: []
+
+  categories: 
+     - snmp

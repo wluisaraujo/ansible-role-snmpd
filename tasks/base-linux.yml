@@ -1,0 +1,25 @@
+---
+# tasks file for snmp
+- name: Instala serviço do snmp (Base Debian)
+  apt: pkg=snmp state=installed update_cache=true
+  when: ansible_os_family == "Debian"
+  register: snmp_installed
+  notify:
+    - Restart snmpd
+
+- name: Instala serviço do snmp (Base RedHat)
+  yum: pkg=net-snmp state=installed
+  when: (ansible_os_family == "CentOS") or
+        (ansible_os_family == "RedHat")
+  register: snmp_installed
+  notify:
+    - Start snmpd
+
+
+- name: Define o arquivo de configuracao do servidor snmp
+  when: snmp_installed|success
+  copy: src=snmpd.conf dest=/etc/snmp/snmpd.conf owner=root group=root mode=0640
+  notify:
+    - Restart snmpd
+
+...

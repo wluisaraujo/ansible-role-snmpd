@@ -1,0 +1,10 @@
+---
+# tasks file for snmp
+- name: Configuracoes para ambientes Linux
+  import_tasks: base-linux.yml
+  when: (ansible_system == "Linux")
+
+- name: Configuracoes para ambientes Windows 
+  import_tasks: base-windows.yml
+  when: (ansible_os_family == "Windows")
+...

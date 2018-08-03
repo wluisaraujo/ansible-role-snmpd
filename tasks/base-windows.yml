@@ -1,0 +1,12 @@
+---
+# tasks file for snmp
+- name: Check for SNMP tools
+  win_feature:
+    name: "RSAT-SNMP"
+    state: present
+
+- name: Check for SNMP
+  win_feature:
+    name: "SNMP-Service"
+    state: present
+...
