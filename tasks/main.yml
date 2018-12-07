@@ -4,7 +4,7 @@
   import_tasks: base-linux.yml
   when: (ansible_system == "Linux")
 
-- name: Configuracoes para ambientes Windows 
-  import_tasks: base-windows.yml
-  when: (ansible_os_family == "Windows")
+#- name: Configuracoes para ambientes Windows 
+#  import_tasks: base-windows.yml
+#  when: (ansible_os_family == "Windows")
 ...
