@@ -15,21 +15,11 @@ env:
  - global: ANSIBLE_HOST_KEY_CHECKING="False"
  - distribution: centos
    version: 7
-# - distribution: fedora
-#   version: 26
-# - distribution: fedora
-#   version: 25
-# - distribution: fedora
-#   version: 24
  - distribution: ubuntu
-   version: xenial
-# - distribution: ubuntu
-#   version: trusty
+   version: trusty
  - distribution: debian
    version: stretch
- - distribution: debian
-   version: jessie
-    
+
 # Install ansible
 addons:
  apt:
@@ -48,7 +38,7 @@ install:
 
 
  # Install ansible role
- - ansible-galaxy install wluisaraujo.iac-snmp-agent
+ - ansible-galaxy install ansible-galaxy install wluisaraujo.iac_ansible_snmp_agent
 
 script:
  # Basic role syntax check
