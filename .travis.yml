@@ -38,7 +38,7 @@ install:
 
 
  # Install ansible role
- - ansible-galaxy install ansible-galaxy install wluisaraujo.iac_ansible_snmp_agent
+ - ansible-galaxy install wluisaraujo.iac_ansible_snmp_agent
 
 script:
  # Basic role syntax check
