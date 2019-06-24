@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: iac-ansible-snmp-agent
   author: w.luis.araujo
   description: SNMP Agent
   company: LUSAR | wluisaraujo.github.io
