@@ -1,5 +1,5 @@
 ---
-# handlers file for snmp
+# handlers file for snmpd
 ## SystemD
 - name: Start {{ service_name }}
   systemd:

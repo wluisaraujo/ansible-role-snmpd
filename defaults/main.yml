@@ -1,3 +1,3 @@
 ---
-# defaults file for snmp
-service_name: snmp
+# defaults file for snmpd
+service_name: snmpd
