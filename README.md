@@ -13,6 +13,14 @@ Requirements
 
  *
 
+Installation
+------------
+
+```console
+vagrant@localhost:~$ ansible-galaxy install wluisaraujo.snmpd
+vagrant@localhost:~$ ansible-galaxy install -r wluisaraujo.snmpd/requirements.txt
+```
+
 Role Variables
 --------------
 
